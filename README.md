@@ -1,4 +1,4 @@
-# 📊 Projet d'Analyse des Avis Clients - Site de E-Commerce
+#  Projet d'Analyse des Avis Clients - Site de E-Commerce
 
 ## 🎯 Objectif du Projet
 
@@ -6,35 +6,35 @@ L'objectif de ce projet est de **prédire la note d'un client** pour une command
 Les avis clients sont essentiels pour **renforcer la confiance des acheteurs** et augmenter les ventes.  
 
 ### 📌 Objectifs spécifiques :
-- 🔍 **Prédire** la note d'un client.
-- 🧐 **Analyser** les facteurs influençant la satisfaction.
-- 📈 **Optimiser** l'expérience utilisateur et les ventes.
+-  **Prédire** la note d'un client.
+-  **Analyser** les facteurs influençant la satisfaction.
+-  **Optimiser** l'expérience utilisateur et les ventes.
 
 ---
 
 ## 🛠️ Étapes du Projet
 
 ### 1️⃣ **Extraction et Compréhension des Données**
-- 🔗 **Fusion des bases relationnelles** via SQL.
-- 🗂️ **Conversion et création de colonnes** :
-  - 📦 `delivery_duration` : Durée réelle de livraison.
-  - ⏳ `difference_between_expected_and_real_delivery_date` : Écart entre la date estimée et réelle.
+-  **Fusion des bases relationnelles** via SQL.
+-  **Conversion et création de colonnes** :
+  -  `delivery_duration` : Durée réelle de livraison.
+  -  `difference_between_expected_and_real_delivery_date` : Écart entre la date estimée et réelle.
 
 ### 2️⃣ **Datavisualisation**
 Avant la modélisation, nous avons **visualisé** les données pour identifier les tendances :
-- 📅 **Évolution des commandes** (2017-2018).
-- 🕒 **Périodes d’achat préférées** (après-midi, lundi).
-- 💰 **Impact du prix et des frais de livraison** sur les notes.
+-  **Évolution des commandes** (2017-2018).
+-  **Périodes d’achat préférées** (après-midi, lundi).
+-  **Impact du prix et des frais de livraison** sur les notes.
 
 ### 3️⃣ **Feature Engineering**
-- 📝 `number_review_before` : Nombre d’avis laissés avant l’achat.
-- ⭐ `review_score_before` : Note moyenne d’un produit avant achat.
-- 🔄 **Traduction** des noms de catégories de produits.
+-  `number_review_before` : Nombre d’avis laissés avant l’achat.
+-  `review_score_before` : Note moyenne d’un produit avant achat.
+-  **Traduction** des noms de catégories de produits.
 
 ### 4️⃣ **Modélisation**
-- 🌲 **Modèle : Random Forest**.
-- 🔀 **Fusion des classes** pour gérer le déséquilibre des données.
-- 📊 **Évaluation** et analyse des erreurs du modèle.
+-  **Modèle : Random Forest**.
+-  **Fusion des classes** pour gérer le déséquilibre des données.
+-  **Évaluation** et analyse des erreurs du modèle.
 
 ---
 
