@@ -64,34 +64,56 @@ Avant la modélisation, nous avons **visualisé** les données pour identifier l
   
 ## 🧠 Modélisation et Évaluation
 
-🌲 **Modèle Random Forest**
+### 🌲 Modèle Random Forest
+Nous avons testé plusieurs modèles et **Random Forest** a offert la **meilleure précision** pour prédire les notes des clients.
 
-Nous avons testé Random Forest, qui offre la meilleure précision pour prédire les notes des clients.
+🔹 Avantages :
+- Robuste aux données bruitées 🎯
+- Capture bien les interactions entre les variables 🔄
+- Performant sur des datasets non linéaires 📈
 
-🔀 **Fusion des Classes**
-Pour améliorer la classification, nous avons regroupé :
+---
 
-(1, 2, 3) → Classe "Mauvaise note"
-(4, 5) → Classe "Bonne note"
+## 🔀 Fusion des Classes
 
-📊 **Matrice de Confusion**
+Pour améliorer la classification, nous avons **regroupé les notes** afin de simplifier le problème et réduire les erreurs :
 
-Certaines classes sont souvent confondues :
-❌ Les notes 2 et 3 sont souvent classées comme 1.
-❌ Les notes 4 et 5 sont souvent confondues.
+| Notes Initiales | Nouvelle Classe |
+|----------------|----------------|
+| **1, 2, 3** | 📉 Mauvaise Note |
+| **4, 5** | ⭐ Bonne Note |
 
-Malgré cela, la fusion des classes a amélioré la précision globale.
+Cela permet une **classification binaire** plus robuste.
+
+---
+
+## 📊 Matrice de Confusion
+
+Malgré l'amélioration, certaines classes restent confondues :
+
+❌ **Les notes 2 et 3** sont souvent classées comme **1**.  
+❌ **Les notes 4 et 5** sont parfois mal distinguées.  
+
+💡 **Explication :**  
+Cette confusion est due à un **déséquilibre des classes**, la note **5 étant largement majoritaire**.  
+
+---
 
 ## 🏁 Conclusion
 
-🔑 **Résultats clés** :
-🚚 Durée de livraison : Impact majeur sur la note client.
-💵 Frais de livraison : Plus ils sont élevés, plus la note baisse.
-🏷️ Prix des produits : Moins impactant, mais les produits plus chers sont mieux notés.
-🎯 En optimisant ces facteurs, on peut améliorer l’expérience client et augmenter les ventes !
+### 🔑 Résultats Clés :
+- 🚚 **Durée de livraison** : Impact **majeur** sur la note client.
+- 💵 **Frais de livraison** : Plus ils sont **élevés**, plus la note **diminue**.
+- 🏷️ **Prix des produits** : Moins impactant, mais les **produits chers** sont souvent mieux notés.
 
-📦 **Prérequis**
+**🎯 En optimisant ces facteurs, nous pouvons améliorer l’expérience client et booster les ventes !**
 
-📌 **Bibliothèques Python nécessaires** :
+---
 
+## 📦 Prérequis
+
+### 📌 Bibliothèques Python nécessaires :
+```bash
 pip install pandas numpy matplotlib seaborn scikit-learn sqlite3
+
+
