@@ -5,6 +5,8 @@
 L'objectif de ce projet est de **prédire la note d'un client** pour une commande sur un site de **e-commerce brésilien**.  
 Les avis clients sont essentiels pour **renforcer la confiance des acheteurs** et augmenter les ventes.  
 
+Le fichier Sqlite est disponible sur [Kaggle](https://www.kaggle.com/datasets/terencicp/e-commerce-dataset-by-olist-as-an-sqlite-database).
+
 ### 📌 Objectifs spécifiques :
 -  **Prédire** la note d'un client.
 -  **Analyser** les facteurs influençant la satisfaction.
